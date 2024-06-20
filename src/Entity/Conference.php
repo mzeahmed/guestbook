@@ -2,10 +2,10 @@
 
 namespace App\Entity;
 
-use App\Repository\ConferenceRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use App\Repository\ConferenceRepository;
+use Doctrine\Common\Collections\Collection;
+use Doctrine\Common\Collections\ArrayCollection;
 
 #[ORM\Entity(repositoryClass: ConferenceRepository::class)]
 class Conference
@@ -74,7 +74,7 @@ class Conference
         return $this->isInternational;
     }
 
-    public function setInternational(bool $isInternational): static
+    public function setIsInternational(bool $isInternational): static
     {
         $this->isInternational = $isInternational;
 
