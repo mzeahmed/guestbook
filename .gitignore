@@ -28,3 +28,5 @@
 .idea/
 .vscode/
 ##<ideas ###
+
+/public/uploads/
